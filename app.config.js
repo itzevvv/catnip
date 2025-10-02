@@ -33,10 +33,10 @@ module.exports = function (_config) {
   return {
     expo: {
       version: VERSION,
-      name: 'Bluesky',
-      slug: 'bluesky',
+      name: 'Catnip',
+      slug: 'catnip',
       scheme: 'bluesky',
-      owner: 'blueskysocial',
+      //owner: 'blueskysocial',
       runtimeVersion: {
         policy: 'appVersion',
       },
@@ -151,7 +151,7 @@ module.exports = function (_config) {
           backgroundColor: '#1185FE',
         },
         googleServicesFile: './google-services.json',
-        package: 'xyz.blueskyweb.app',
+        package: 'lol.mrrp.catnip',
         intentFilters: [
           {
             action: 'VIEW',
@@ -160,6 +160,10 @@ module.exports = function (_config) {
               {
                 scheme: 'https',
                 host: 'bsky.app',
+              },
+              {
+                scheme: 'https',
+                host: 'catnip.mrrp.lol',
               },
               IS_DEV && {
                 scheme: 'http',
