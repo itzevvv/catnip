@@ -524,7 +524,7 @@ let VideoItem = ({
           <Text
             style={[
               a.text_2xl,
-              a.font_bold,
+              a.font_heavy,
               a.text_center,
               a.leading_tight,
               a.mx_xl,
@@ -670,7 +670,7 @@ function ModerationOverlay({
                 <Text
                   style={[
                     a.text_sm,
-                    a.font_semi_bold,
+                    a.font_bold,
                     a.text_center,
                     {opacity: pressed ? 0.5 : 1},
                   ]}>
@@ -807,7 +807,7 @@ function Overlay({
                   />
                   <View style={[a.flex_1]}>
                     <Text
-                      style={[a.text_md, a.font_bold]}
+                      style={[a.text_md, a.font_heavy]}
                       emoji
                       numberOfLines={1}>
                       {sanitizeDisplayName(
@@ -1115,7 +1115,7 @@ function EndMessage() {
         <LeafIcon width={64} fill="black" />
       </View>
       <View style={[a.w_full, a.gap_md]}>
-        <Text style={[a.text_3xl, a.text_center, a.font_bold]}>
+        <Text style={[a.text_3xl, a.text_center, a.font_heavy]}>
           <Trans>That's everything!</Trans>
         </Text>
         <Text

@@ -222,7 +222,7 @@ export function InterestButton({interest}: {interest: string}) {
           {
             color: t.palette.contrast_900,
           },
-          a.font_semi_bold,
+          a.font_bold,
           ctx.selected ? styles.textSelected : {},
         ]}>
         {interestsDisplayNames[interest]}

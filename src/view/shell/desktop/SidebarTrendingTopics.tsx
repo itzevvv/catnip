@@ -53,7 +53,7 @@ function Inner() {
             style={[
               a.flex_1,
               a.text_sm,
-              a.font_semi_bold,
+              a.font_bold,
               t.atoms.text_contrast_medium,
             ]}>
             <Trans>Trending</Trans>

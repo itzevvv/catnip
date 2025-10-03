@@ -17,7 +17,7 @@ import {Text} from '#/components/Typography'
 export function Buttons() {
   return (
     <View style={[a.gap_md]}>
-      <Text style={[a.font_bold, a.text_5xl]}>Buttons</Text>
+      <Text style={[a.font_heavy, a.text_5xl]}>Buttons</Text>
 
       <View style={[a.flex_row, a.gap_md, a.align_start, {maxWidth: 350}]}>
         <StackedButton
@@ -54,7 +54,7 @@ export function Buttons() {
         <Fragment key={color}>
           {['tiny', 'small', 'large'].map(size => (
             <Fragment key={size}>
-              <Text style={[a.font_bold, a.text_2xl]}>
+              <Text style={[a.font_heavy, a.text_2xl]}>
                 color={color} size={size}
               </Text>
               <View style={[a.flex_row, a.align_start, a.gap_md]}>

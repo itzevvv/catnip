@@ -98,7 +98,7 @@ export function StepProfiles({
             ) : (
               <Text
                 style={[
-                  a.font_semi_bold,
+                  a.font_bold,
                   a.text_lg,
                   a.text_center,
                   a.mt_lg,
