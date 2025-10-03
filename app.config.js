@@ -21,8 +21,7 @@ module.exports = function (_config) {
     'applinks:bsky.app',
     'applinks:staging.bsky.app',
     'appclips:bsky.app',
-    'appclips:go.bsky.app', // Allows App Clip to work when scanning QR codes
-    // When testing local services, enter an ngrok (et al) domain here. It must use a standard HTTP/HTTPS port.
+    'applinks:catnip.mrrp.lol',
     ...(IS_DEV || IS_TESTFLIGHT ? [] : []),
   ]
 
@@ -46,7 +45,7 @@ module.exports = function (_config) {
       newArchEnabled: false,
       ios: {
         supportsTablet: false,
-        bundleIdentifier: 'xyz.blueskyweb.app',
+        bundleIdentifier: 'lol.mrrp.catnip',
         config: {
           usesNonExemptEncryption: false,
         },
@@ -375,7 +374,7 @@ module.exports = function (_config) {
                 appExtensions: [
                   {
                     targetName: 'Share-with-Bluesky',
-                    bundleIdentifier: 'xyz.blueskyweb.app.Share-with-Bluesky',
+                    bundleIdentifier: 'lol.mrrp.catnip.Share-with-Bluesky',
                     entitlements: {
                       'com.apple.security.application-groups': [
                         'group.app.bsky',
@@ -384,7 +383,7 @@ module.exports = function (_config) {
                   },
                   {
                     targetName: 'BlueskyNSE',
-                    bundleIdentifier: 'xyz.blueskyweb.app.BlueskyNSE',
+                    bundleIdentifier: 'lol.mrrp.catnip.BlueskyNSE',
                     entitlements: {
                       'com.apple.security.application-groups': [
                         'group.app.bsky',
@@ -393,7 +392,7 @@ module.exports = function (_config) {
                   },
                   {
                     targetName: 'BlueskyClip',
-                    bundleIdentifier: 'xyz.blueskyweb.app.AppClip',
+                    bundleIdentifier: 'lol.mrrp.catnip.AppClip',
                   },
                 ],
               },
